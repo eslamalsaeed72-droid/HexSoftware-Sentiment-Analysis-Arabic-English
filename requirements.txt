@@ -1,6 +1,10 @@
 streamlit
-scikit-learn
+scikit-learn==1.2.2
 pandas
 numpy
 joblib
 emoji
+arabic-reshaper
+python-bidi
+tashaphyne
+regex
