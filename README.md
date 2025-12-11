@@ -9,7 +9,7 @@ The solution applies traditional machine learning techniques to build sentiment 
 Data
 
 The datasets used in this project are stored on Google Drive:
-https://drive.google.com/drive/folders/164q_gwG78BbWdWViFAdmCSFUnKngn3wN?usp=sharing
+      https://drive.google.com/drive/folders/164q_gwG78BbWdWViFAdmCSFUnKngn3wN?usp=sharing
 
 The notebook loads, inspects, and processes both Arabic and English datasets.
 
