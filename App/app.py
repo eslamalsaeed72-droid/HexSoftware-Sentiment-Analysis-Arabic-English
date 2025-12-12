@@ -4,10 +4,10 @@ import re
 import emoji
 
 # تحميل الموديلات
-model_ar = joblib.load('models/best_model_arabic.pkl')
-model_en = joblib.load('models/best_model_english.pkl')
-vec_ar = joblib.load('models/tfidf_vectorizer_arabic.pkl')
-vec_en = joblib.load('models/tfidf_vectorizer_english.pkl')
+model_ar = joblib.load('Models/best_model_arabic.pkl')
+model_en = joblib.load('Models/best_model_english.pkl')
+vec_ar = joblib.load('Models/tfidf_vectorizer_arabic.pkl')
+vec_en = joblib.load('Models/tfidf_vectorizer_english.pkl')
 
 # دوال التنظيف (نفس اللي استخدمناها)
 def clean_ar(text):
