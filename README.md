@@ -42,3 +42,23 @@ The project demonstrates a complete ML pipeline: data ingestion, exploratory ana
 - gdown, joblib
 
 ## Project Structure
+├── notebooks/                  # Main Jupyter/Colab notebook
+├── models/                     # All saved models & vectorizers (downloaded automatically)
+├── app/
+│   └── app.py                  # Production Streamlit web application
+├── requirements.txt
+├── .gitignore
+└── README.md
+text## How to Run Locally
+```bash
+git clone https://github.com/eslamalsaeed72-droid/HexSoftware-Sentiment-Analysis-Arabic-English.git
+cd HexSoftware-Sentiment-Analysis-Arabic-English
+pip install -r requirements.txt
+streamlit run app/app.py
+Live Deployment
+The application is deployed on Streamlit Community Cloud and loads all models automatically from public Google Drive links.
+Live URL: https://hexsoftware-sentiment-analysis.streamlit.app
+Acknowledgments
+This project was fully developed as part of the Hex Software Machine Learning Track internship program**.
+Special thanks to the Hex Software team for their guidance and support throughout the internship.
+
