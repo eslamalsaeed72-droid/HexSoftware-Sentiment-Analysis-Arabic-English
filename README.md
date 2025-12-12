@@ -1,58 +1,44 @@
-Sentiment Analysis for Arabic and English
+# HexSoftware – Arabic & English Sentiment Analysis  
+**Machine Learning Internship Project – ML Track**
 
-This repository provides a concise, production-oriented machine learning workflow for sentiment classification in Arabic and English text. The project includes preprocessing pipelines, feature engineering using TF-IDF, model training, evaluation, and prediction.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.5-orange)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0-red)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.38-critical)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Project Summary
+**Live Demo** → https://hexsoftware-sentiment-analysis.streamlit.app
 
-The solution applies traditional machine learning techniques to build sentiment analysis models capable of classifying text into positive, negative, or neutral sentiment. It is implemented in a single Jupyter Notebook for clarity and reproducibility.
+## Project Overview
+End-to-end sentiment analysis system for **Arabic** and **English** text, developed from scratch during the **Hex Software Machine Learning Track** internship.
 
-Data
+The project demonstrates a complete ML pipeline: data ingestion, exploratory analysis, preprocessing, classical ML modeling, deep learning (BiLSTM), model comparison, and deployment via an interactive web application.
 
-The datasets used in this project are stored on Google Drive:
-      https://drive.google.com/drive/folders/164q_gwG78BbWdWViFAdmCSFUnKngn3wN?usp=sharing
+## Key Results
+| Language | Best Classical Model | Accuracy | Deep Learning (BiLSTM) |
+|----------|----------------------|----------|------------------------|
+| Arabic   | Logistic Regression  | **87.69%** | ~85% (25 epochs)      |
+| English  | LinearSVC            | **75.85%** | ~83% (15 epochs)      |
 
-The notebook loads, inspects, and processes both Arabic and English datasets.
+> Classical models outperformed deep learning on these datasets while being significantly faster and lighter – production-ready choice.
 
-Key Capabilities
+## Features
+- Custom data loaders for folder-based Arabic dataset and Sentiment140 format
+- Comprehensive EDA with interactive visualizations
+- Language-specific text cleaning and stop-word removal
+- TF-IDF vectorization (optimized per language)
+- Training & hyperparameter tuning of 4 classical models using GridSearchCV
+- BiLSTM implementation with PyTorch (bonus deep learning track)
+- Automatic best-model selection and persistence
+- **Interactive Streamlit web application** supporting real-time predictions in both languages
+- All models hosted on Google Drive and downloaded on-the-fly (works perfectly on Streamlit Cloud)
 
-Unified workflow for Arabic and English text
+## Tech Stack
+- Python 3.10
+- pandas, numpy, matplotlib, seaborn
+- scikit-learn
+- PyTorch
+- Streamlit
+- gdown, joblib
 
-Text normalization, cleaning, and linguistic preprocessing
-
-Feature extraction with TF-IDF
-
-Evaluation of multiple ML models (Logistic Regression, SVM, Naive Bayes, Random Forest)
-
-Performance reporting using standard metrics and confusion matrices
-
-Support for predicting sentiment on new text samples
-
-Requirements
-
-Install the required dependencies:
-
-pip install numpy pandas scikit-learn matplotlib seaborn wordcloud nltk emoji
-pip install tashaphyne arabic-reshaper python-bidi
-
-Usage
-
-Open the notebook:
-Sentiment_Analysis_Arabic_&_English_(ML_Track_Hex_Software).ipynb
-
-Run the notebook sequentially.
-
-Update the data paths if needed.
-
-Review model performance and execute the prediction section for custom inputs.
-
-Future Enhancements
-
-Integration of transformer-based language models (e.g., BERT, AraBERT)
-
-Deployment as an API using FastAPI or Flask
-
-Streamlit-based UI for real-time sentiment analysis
-
-Improved model persistence and reproducible pipelines
-
-License:
+## Project Structure
