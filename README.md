@@ -42,6 +42,7 @@ The project demonstrates a complete ML pipeline: data ingestion, exploratory ana
 - gdown, joblib
 
 ## Project Structure
+
 ├── notebooks/                  # Main Jupyter/Colab notebook
 ├── models/                     # All saved models & vectorizers (downloaded automatically)
 ├── app/
